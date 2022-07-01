@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy'),
+        url('../fonts/Gilroy.woff') format('woff')
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans'),
+        url('../fonts/OpenSans-SemiBold.ttf') format('ttf')
+}
+
+.starships {
+    font-family: 'Gilroy';
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.starships:hover{
+    color: #E2F063;
+    text-decoration-line: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+.starships.active {
+    color: #E2F063;
+    text-decoration-line: underline;
+    opacity: 1;
+}
+
+.logoLink.active {
+    opacity: 1;
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-size: 40px;
+    color: white;
+}
+
+.logo:hover {
+    text-decoration-line: underline;
+    color: #E2F063;
+    opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .logo {
+        font-size: 30px;
+    }
+}

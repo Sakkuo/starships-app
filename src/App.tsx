@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainPage from "./components/MainPage/MainPage";
+import StarshipContent from "./components/StarshipContent/StarshipContent";
+import StarshipsContainer from "./components/StarshipsPage/StarshipsContainer/StarshipsContainer";
+import Layout from "./UI/Layout/Layout";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+    const routes = (
+        <Routes>
+            <Route path="/starships" element={<StarshipsContainer />}/>
+            <Route path={"/starships/:id"} element={<StarshipContent />} />
+            <Route path="/" element={<MainPage />}/>
+        </Routes>
+    );
+
+    return (
+        <BrowserRouter>
+            <div className="App">
+              <Layout routes={routes}/>
+            </div>
+        </BrowserRouter>
+    );
+};
 
 export default App;

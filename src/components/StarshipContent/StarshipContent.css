@@ -1,0 +1,117 @@
+.StarshipContent {
+    min-height: 87.6vh;
+    padding: 0 80px 150px 80px;
+    background: #1e1e1e;
+    font-family: 'Gilroy';
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .StarshipContent {
+        padding: 0 10px 50px 10px;
+    }
+}
+
+.ImageAndChar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 500px) {
+    .ImageAndChar {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+.StarshipChar div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 500px) {
+    .StarshipChar div {
+        flex-direction: column;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+
+
+.StarshipImg {
+    width: 624px;
+    height: 419px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+}
+
+@media (max-width: 500px) {
+    .StarshipImg {
+        width: 340px;
+        height: 228px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+}
+
+
+.StarshipContent h1 {
+    color: #E2F063;
+    font-weight: 500;
+    font-size: 70px;
+    margin-bottom: 60px;
+    margin-top: 130px;
+}
+@media (max-width: 500px) {
+    .StarshipContent h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        margin-top: 60px;
+    }
+}
+
+
+.StarshipChar {
+    font-size: 28px;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .StarshipChar {
+        font-size: 24px;
+    }
+}
+
+.StarshipDescribe {
+    font-size: 36px;
+}
+
+@media (max-width: 500px) {
+    .StarshipDescribe {
+        font-size: 20px;
+    }
+}
+
+.StarshipChar span {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: right;
+    max-width: 440px;
+}
+
+@media (max-width: 500px) {
+    .StarshipChar span {
+        margin-top: 12px;
+        text-align: left;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .StarshipContent {
+        min-height: 100vh
+    }
+}

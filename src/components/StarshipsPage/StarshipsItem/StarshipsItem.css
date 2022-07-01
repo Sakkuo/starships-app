@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy'),
+        url('../../../UI/fonts/Gilroy.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gilroy'),
+        url('../../../UI/fonts/Gilroy-Medium.woff') format('woff')
+}
+
+
+.StarshipCard {
+    width: 385px;
+    height: 397px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 60px;
+    padding: 19px 19px 30px 19px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.StarshipCard:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 500px) {
+    .StarshipCard {
+        padding: 18px;
+        width: 340px;
+        height: 330px;
+    }
+
+}
+
+
+.StarshipImage {
+    width: 345px;
+    height: 221px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+    .StarshipImage {
+        width: 304px;
+        margin-bottom: 20px;
+        height: 195px;
+    }
+}
+
+
+.StarshipText {
+    font-family: 'Gilroy';
+    font-size: 23px;
+}
+
+.StarshipText div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.StarshipText span {
+    font-weight: 500;
+    font-size: 27px;
+    max-width: 230px;
+    text-align: right;
+}
+
+@media (max-width: 500px) {
+    .StarshipText {
+        font-size: 20px;
+    }
+
+    .StarshipText span {
+        font-size: 22px;
+        max-width: 200px;
+    }
+
+}

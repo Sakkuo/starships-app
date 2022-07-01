@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy'),
+        url('../../../UI/fonts/Gilroy.woff') format('woff')
+}
+
+
+.skeletons div {
+    margin-bottom: 60px;
+}
+
+.StarshipsContainer {
+    background-color: #1e1e1e;
+    padding: 0 80px 80px 80px;
+    min-height: 100vh;
+}
+
+@media (max-width: 500px) {
+    .StarshipsContainer {
+        padding: 0 10px 20px 10px ;
+    }
+
+}
+
+.ContainerImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.StarshipsContainer h1 {
+    color: #E2F063;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 70px;
+    margin-top: 120px;
+}
+
+@media (max-width: 500px) {
+    .StarshipsContainer h1 {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+
+}

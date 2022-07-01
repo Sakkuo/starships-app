@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gilroy'),
+        url('../../UI/fonts/Gilroy.woff') format('woff')
+}
+
+
+.MainPage {
+    background: #1e1e1e;
+    height: calc(100vh - 98px);
+    padding: 80px 80px 0 80px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+    .MainPage {
+        height: calc(100vh - 73px);
+        padding: 0px 10px 0 10px;
+    }
+}
+
+.MainPage h1 {
+    color: #E2F063;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 70px;
+}
+
+@media (max-width: 500px) {
+    .MainPage h1 {
+        font-size: 40px;
+    }
+}
+
+.MainPage p {
+    color: #FFFFFF;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 36px;
+}
+
+@media (max-width: 500px) {
+    .MainPage p {
+        font-size: 20px;
+        margin-top: 0;
+        line-height: 140%;
+    }
+}
