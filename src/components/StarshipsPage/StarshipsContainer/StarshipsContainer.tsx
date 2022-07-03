@@ -19,11 +19,34 @@ const StarshipsContainer: React.FC = () => {
         error
     } = dataAPI.useFetchAllDataQuery([limit, page])
 
+    const thisPages = () => {
+        if (images?.count) {
+            const numPages = Math.ceil(images?.count/10)
+            let pagesArray = []
+            for (let i = 1; i < numPages+1; i++) {
+                pagesArray.push(i)
+            }
+            return (
+                pagesArray.map((number, i) => (
+                    <div key={i} onClick={() => changePage(number)} className='numberPages'>{number}</div>
+                ))
+            )
+        }
+    }
+
+    const changePage = (number: number) => {
+        setPage(number)
+    }
 
     return (
         <div className="StarshipsContainer">
             {error && <div>Произошла ошибка при загрузке</div>}
-            <h1>Starships</h1>
+            <div className="articlePage">
+                <h1>Starships</h1>
+                <div className="paginationDiv">
+                    {thisPages()}
+                </div>
+            </div>
             {isLoading && 
             <div className="ContainerImages skeletons">
                 <Variants />

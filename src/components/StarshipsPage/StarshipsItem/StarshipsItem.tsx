@@ -14,6 +14,9 @@ const StarshipsItem: React.FC<ImageItemPros> = ({ image, onClick }) => {
     const [url, setUrl] = useState<string>("");
     const [isImage, setIsImage] = useState<boolean>();
 
+    useEffect (() => {
+        getStarshipsId()
+    }, [image])
 
     useEffect(() => {
         getStarshipsId();
@@ -42,6 +45,8 @@ const StarshipsItem: React.FC<ImageItemPros> = ({ image, onClick }) => {
             .replace("/", "");
         setId(id);
     };
+
+    console.log(id)
     return (
         <div className="StarshipCard">
                 <div onClick={() => onClick(id)}>

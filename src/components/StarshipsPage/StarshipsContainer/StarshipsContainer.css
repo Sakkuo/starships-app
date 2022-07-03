@@ -45,3 +45,29 @@
     }
 
 }
+
+.articlePage {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.numberPages {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.numberPages:hover {
+    background-color: #474747;
+    transition: 0.3s ease-in-out;
+}
+
+.paginationDiv {
+    display: flex;
+    color: white;
+    font-family: 'Gilroy';
+    font-size: 24px;
+}
